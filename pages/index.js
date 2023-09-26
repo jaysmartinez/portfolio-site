@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic';
+import Image from 'next/image';
 import About from '../src/components/About';
 import Blog from '../src/components/Blog';
 import Contact from '../src/components/Contact';
@@ -21,14 +22,14 @@ const Index = () => {
 								<div className='type-box'>
 									<h6>Hello, I am</h6>
 									<h1 className='font-alt'>Jay Martinez</h1>
-									<p className='lead'>
+									{/* <p className='lead'>
 										I am <TypingAnimation />
-									</p>
-									<p className='desc'>
+									</p> */}
+									{/* <p className='desc'>
 										Im a Full-Stack Web Developer with a range of experiences in the web field. From
 										small Creative Agencies to large Tech Companies, I'm always up for a challenge
 										and enjoy collaborating with teams to find innovative solutions.
-									</p>
+									</p> */}
 									<div className='btn-bar'>
 										<a className='px-btn px-btn-theme' href='#'>
 											Download CV
@@ -38,7 +39,7 @@ const Index = () => {
 							</div>
 							<div className='col-lg-6'>
 								<div className='hb-img'>
-									<img src='static/img/headshot.jpg' title='' alt='' />
+									<Image src='/static/img/headshot.jpg' title='' alt='' width='500' height='500' />
 								</div>
 							</div>
 						</div>
